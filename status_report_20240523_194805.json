@@ -1,0 +1,304 @@
+[
+  {
+    "uri": "features/scenarios/corp_shopping_site.feature",
+    "id": "login-corp-shopping-site",
+    "keyword": "Feature",
+    "name": "Login Corp shopping site",
+    "description": "",
+    "line": 2,
+    "tags": [
+      {
+        "name": "@ey_corp_merch_site",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "login-corp-shopping-site;adding-the-first-search-result-product-to-cart;;2",
+        "keyword": "Scenario Outline",
+        "name": "Adding the first search result product to cart",
+        "description": "",
+        "line": 15,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@ey_corp_merch_site",
+            "line": 1
+          },
+          {
+            "name": "@add_a_product_to_cart",
+            "line": 12
+          }
+        ],
+        "comments": [
+          {
+            "value": "#Value input to text box",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "output": [
+              "\n-------------Scenario Start ------------",
+              "[\"@ey_corp_merch_site\", \"@add_a_product_to_cart\"]"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3584492900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/page_init_hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8275100
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I launch Ey Corp Merchandise webpage",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/custom_step.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9012460900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I search for the \"Bag\" in \"Ey Merch\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/custom_step.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14250623000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I select the first Bag for test case Fst_01",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/custom_step.rb:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16131574500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add the product to the cart",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/custom_step.rb:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 647088100
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I validate the \"Added to cart.\" message",
+            "line": 10,
+            "output": [
+              "\nProduct is not added to cart; \nMessage: Cart updated."
+            ],
+            "match": {
+              "location": "features/step_definitions/assertion_step.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3388538600
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on Cart icon and validate \"Bag\" is available in cart",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/assertion_step.rb:22"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Net::ReadTimeout with #<Socket:(closed)> (Net::ReadTimeout)\n./features/page_class/base_page.rb:65:in `click_element'\n./features/step_definitions/assertion_step.rb:23:in `/^I click on Cart icon and validate \"(.*)\" is available in cart$/'\nfeatures/scenarios/corp_shopping_site.feature:15:in `And I click on Cart icon and validate \"Bag\" is available in cart'\nfeatures/scenarios/corp_shopping_site.feature:11:in `And I click on Cart icon and validate \"<product>\" is available in cart'",
+              "duration": 60050758500
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "\nTime taken for scenario execution: 00:01:47.152",
+              "\nScenario Passed?: false"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Bad file descriptor - Failed to open TCP connection to 127.0.0.1:9515 (Bad file descriptor - No message available) (Errno::EBADF)\n./features/support/hooks.rb:14:in `After'",
+              "duration": 130096892400
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-corp-shopping-site;adding-the-first-search-result-product-to-cart;;3",
+        "keyword": "Scenario Outline",
+        "name": "Adding the first search result product to cart",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@ey_corp_merch_site",
+            "line": 1
+          },
+          {
+            "name": "@add_a_product_to_cart",
+            "line": 12
+          }
+        ],
+        "comments": [
+          {
+            "value": "#Value input to text box",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "output": [
+              "\n-------------Scenario Start ------------",
+              "[\"@ey_corp_merch_site\", \"@add_a_product_to_cart\"]"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3280625500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/page_init_hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5434600
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I launch Ey Corp Merchandise webpage",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/custom_step.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12299462100
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I search for the \"Pen\" in \"Ey Merch\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/custom_step.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13635439400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I select the first Pen for test case Fst_01",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/custom_step.rb:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13019916500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add the product to the cart",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/custom_step.rb:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 657310400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I validate the \"Added to cart.\" message",
+            "line": 10,
+            "output": [
+              "\nProduct is not added to cart; \nMessage: Cart updated."
+            ],
+            "match": {
+              "location": "features/step_definitions/assertion_step.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7227330300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on Cart icon and validate \"Pen\" is available in cart",
+            "line": 11,
+            "output": [
+              "\ntxt1 = Derby Soft Pencil - 5pk exist in cart"
+            ],
+            "match": {
+              "location": "features/step_definitions/assertion_step.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8100317000
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "\nTime taken for scenario execution: 00:00:58.255",
+              "\nScenario Passed?: true",
+              "\n-------------Scenario Stop ------------"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1104431300
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
