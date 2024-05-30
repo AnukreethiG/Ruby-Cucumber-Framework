@@ -13,7 +13,7 @@ Feature: Login Corp shopping site
     Examples:
       | Test_Case | product |
       | Fst_01    | Bag     |
-      | Fst_01    | Pen     |
+      | Fst_02    | Pen     |
 
   Scenario Outline: Adding the least price search result product to cart
     Given I launch Ey Corp Merchandise webpage
@@ -60,8 +60,11 @@ Feature: Login Corp shopping site
     Given I launch Ey Corp Merchandise webpage
     And I add multiple <products> to the cart and capture the price of each product for test case <Test_Case>
     And I validate <products> subtotal in the cart
-    @search_and_add_multiple_product
+    @TC01_search_and_add_multiple_product @search_and_add_multiple_product
     Examples:
       | Test_Case | products     |
       | Mltp_01   | Bag, Pen     |
+    @TC02_search_and_add_multiple_product @search_and_add_multiple_product
+    Examples:
+      | Test_Case | products     |
       | Mltp_02   | Book, Bottle |
